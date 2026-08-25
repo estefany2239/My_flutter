@@ -1,7 +1,8 @@
 # Ignorar absolutamente todo
 *
 
-# Permitir solo el gitignore y la carpeta web con todo su contenido
+# Excepciones permitidas
 !.gitignore
+!README.md
 !web/
 !web/**
