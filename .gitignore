@@ -1,0 +1,7 @@
+# Ignorar absolutamente todo
+*
+
+# Permitir solo el gitignore y la carpeta web con todo su contenido
+!.gitignore
+!web/
+!web/**
