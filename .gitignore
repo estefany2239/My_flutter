@@ -1,8 +1,23 @@
-# Ignorar absolutamente todo
+# Ignorar todo por defecto
 *
 
-# Excepciones permitidas
+# Excepciones necesarias en la raíz para GitHub Pages
 !.gitignore
 !README.md
+!index.html
+!favicon.png
+!manifest.json
+!flutter_bootstrap.js
+!flutter_service_worker.js
+!flutter.js
+!main.dart.js
+!version.json
+!.last_build_id
+!assets/
+!assets/**
+!canvaskit/
+!canvaskit/**
+!icons/
+!icons/**
 !web/
 !web/**
