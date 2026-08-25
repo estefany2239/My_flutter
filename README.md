@@ -1,17 +1,98 @@
-# my_flutter
+# 📱 Flutter User App
 
-A new Flutter project.
+Aplicación desarrollada con Flutter como ejercicio práctico de desarrollo de interfaces y navegación.
 
-## Getting Started
+El proyecto implementa un flujo básico de autenticación y gestión de usuario, utilizando una estructura organizada por funcionalidades.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Funcionalidades
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- 🔐 Inicio de sesión
+- 📝 Registro de usuario
+- 🔑 Recuperación de contraseña
+- 🏠 Dashboard
+- 👤 Perfil de usuario
+- 🚪 Cierre de sesión
+- 🧭 Navegación entre pantallas
+- 🧩 Widgets reutilizables
+- 🎨 Gestión centralizada de colores
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📱 Pantallas
+
+### 🔐 Login
+
+Permite al usuario ingresar a la aplicación mediante sus datos de acceso.
+
+### 📝 Registro
+
+Permite crear una nueva cuenta proporcionando los datos básicos del usuario.
+
+### 🔑 Recuperar contraseña
+
+Permite ingresar un correo electrónico para solicitar la recuperación de la contraseña.
+
+### 🏠 Dashboard
+
+Incluye:
+
+- Mensaje de bienvenida.
+- Actividades recientes.
+- Cinco tarjetas de información.
+- Barra de navegación inferior.
+
+### 👤 Perfil
+
+Muestra:
+
+- Avatar del usuario.
+- Nombre.
+- Correo electrónico.
+- Información básica.
+- Botón para cerrar sesión.
+
+---
+
+## 🗂️ Estructura del proyecto
+
+```text
+lib/
+│
+├── core/
+│   ├── theme/
+│   │   └── app_colors.dart
+│   │
+│   └── routes/
+│       └── app_routes.dart
+│
+├── features/
+│   │
+│   ├── auth/
+│   │   └── presentation/
+│   │       ├── pages/
+│   │       │   ├── login_page.dart
+│   │       │   ├── register_page.dart
+│   │       │   └── forgot_password_page.dart
+│   │       │
+│   │       └── widgets/
+│   │           ├── custom_text_field.dart
+│   │           └── primary_button.dart
+│   │
+│   ├── dashboard/
+│   │   └── presentation/
+│   │       └── pages/
+│   │           └── dashboard_page.dart
+│   │
+│   ├── profile/
+│   │   └── presentation/
+│   │       └── pages/
+│   │           └── profile_page.dart
+│   │
+│   └── splash/
+│       └── presentation/
+│           └── pages/
+│               └── splash_page.dart
+│
+└── main.dart
