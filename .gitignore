@@ -1,7 +1,7 @@
 # Ignorar todo por defecto
 *
 
-# Excepciones necesarias en la raíz para GitHub Pages
+# Excepciones necesarias en la raíz y subcarpetas para GitHub Pages
 !.gitignore
 !README.md
 !index.html
@@ -21,3 +21,5 @@
 !icons/**
 !web/
 !web/**
+!docs/
+!docs/**
